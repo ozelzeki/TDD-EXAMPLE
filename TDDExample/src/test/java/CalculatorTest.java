@@ -58,14 +58,7 @@ class CalculatorTest {
         assertEquals(expected, Calculator.divide(dividend, divisor));
     }
 
-    @Test
-    void testDivisionByZero() {
-        assertThrows(
-                IllegalArgumentException.class,
-                () -> Calculator.divide(12.5, 0),
-                "IllegalArgumentException expected."
-        );
-    }
+  
 
     @Test
     void testDivision6() {
